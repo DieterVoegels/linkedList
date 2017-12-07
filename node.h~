@@ -1,0 +1,17 @@
+#include <iostream>
+#include "student.h"
+
+using namespace std;
+
+class node{
+ public:
+  node(student* S);
+  ~node();
+  node* getNextNode();
+  void setNextNode(node* newNext);
+  student* getStudent();
+  void setStudent();
+ private:
+  student* S;
+  node* next;
+};
